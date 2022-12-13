@@ -8,7 +8,6 @@ seacrhBox.addEventListener('keypress', setQuery);
 function setQuery(e) {
     if (e.keyCode == 13) {
         getResults(seacrhBox.value);
-        console.log(seacrhBox.value);
     }
 }
 

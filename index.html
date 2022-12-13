@@ -9,6 +9,7 @@
     <title>OB_HAVO</title>
 </head>
 <body>
+<div class="alan-btn"></div>
 
 <div class="app-wrap">
     <main>
@@ -40,5 +41,17 @@
 
 
 <script src="java.js"></script>
+<script type="text/javascript"
+        src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+    var alanBtnInstance = alanBtn({
+        key: "9af20d5f0af87e94a5e7222d41ea87012e956eca572e1d8b807a3e2338fdd0dc/stage",
+        onCommand: function (commandData) {
+            if (commandData.command === "go:back") {
+            }
+        },
+        rootEl: document.getElementById("alan-btn"),
+    });
+</script>
 </body>
 </html>
